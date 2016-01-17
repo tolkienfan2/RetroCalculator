@@ -16,15 +16,10 @@ class ViewController: UIViewController {
 		case Multiply = "*"
 		case Subtract = "-"
 		case Add = "+"
-		case Empty = "Empty"
+		case Empty = ""
 	}
 
 	@IBOutlet weak var outputLabel: UILabel!
-	@IBOutlet weak var divideButton: UIButton!
-	@IBOutlet weak var multiplyButton: UIButton!
-	@IBOutlet weak var subtractButton: UIButton!
-	@IBOutlet weak var addButton: UIButton!
-	@IBOutlet weak var equalButton: UIButton!
 	
 	var buttonSound: AVAudioPlayer!
 	var runningNumber = ""
@@ -71,7 +66,21 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func onEqualPressed(sender: AnyObject) {
+		if currentOperation != Operation.Empty {
 		processOperation(currentOperation)
+		} else {
+			return
+		}
+	}
+	
+	@IBAction func onClearPressed(sender: AnyObject)
+	{
+		playSound()
+		runningNumber = ""
+		result = "0.0"
+		leftValStr = result
+		outputLabel.text = result
+		currentOperation = Operation.Empty
 	}
 	
 	func processOperation(operation: Operation) {
@@ -95,6 +104,7 @@ class ViewController: UIViewController {
 					
 				} else if currentOperation == Operation.Subtract {
 					result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+
 				}
 				
 				leftValStr = result
