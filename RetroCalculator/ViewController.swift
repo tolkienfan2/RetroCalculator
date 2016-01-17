@@ -113,6 +113,7 @@ class ViewController: UIViewController {
 	}
 	
 	func playSound() {
+		buttonSound.volume = 0.10
 		if buttonSound.playing {
 			buttonSound.stop()
 		}
