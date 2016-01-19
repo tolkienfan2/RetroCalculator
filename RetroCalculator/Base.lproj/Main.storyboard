@@ -6,8 +6,8 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Minecraft.ttf">
-            <string>Minecraft</string>
+        <mutableArray key="jabjai.ttf">
+            <string>JabjaiHeavy</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="NwD-bS-9Ab">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bground" translatesAutoresizingMaskIntoConstraints="NO" id="NwD-bS-9Ab">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NwD-bS-9Ab" secondAttribute="height" multiplier="1:1" priority="250" id="a8h-Aq-8N3"/>
@@ -58,7 +58,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="X6j-Bb-3Cd">
-                                <rect key="frame" x="181" y="147" width="239" height="385"/>
+                                <rect key="frame" x="186" y="147" width="239" height="385"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJ7-Rq-zag">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="60"/>
@@ -250,7 +250,7 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dk7-4t-9Hr">
                                 <rect key="frame" x="420" y="75" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="JabjaiHeavy" family="jabjai" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -263,14 +263,14 @@
                             <constraint firstItem="6PX-HN-euF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RXn-6L-QEj"/>
                             <constraint firstAttribute="trailing" secondItem="NwD-bS-9Ab" secondAttribute="trailing" id="U7G-sI-zNT"/>
                             <constraint firstItem="6PX-HN-euF" firstAttribute="trailing" secondItem="Dk7-4t-9Hr" secondAttribute="trailing" constant="20" id="eYS-oX-6bD"/>
-                            <constraint firstItem="6PX-HN-euF" firstAttribute="trailing" secondItem="X6j-Bb-3Cd" secondAttribute="trailing" constant="20" id="gEB-17-bh4"/>
+                            <constraint firstItem="6PX-HN-euF" firstAttribute="trailing" secondItem="X6j-Bb-3Cd" secondAttribute="trailing" constant="15" id="gEB-17-bh4"/>
                             <constraint firstItem="X6j-Bb-3Cd" firstAttribute="top" secondItem="6PX-HN-euF" secondAttribute="top" constant="95" id="gtQ-ZD-BC0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LJd-mk-1Cm" secondAttribute="bottom" id="lAl-tw-yWu"/>
                             <constraint firstItem="NwD-bS-9Ab" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lvG-O9-4t1"/>
-                            <constraint firstItem="X6j-Bb-3Cd" firstAttribute="centerX" secondItem="6PX-HN-euF" secondAttribute="centerX" id="ozn-yH-IeD"/>
+                            <constraint firstItem="X6j-Bb-3Cd" firstAttribute="centerX" secondItem="6PX-HN-euF" secondAttribute="centerX" priority="250" id="ozn-yH-IeD"/>
                             <constraint firstItem="NwD-bS-9Ab" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pgo-7g-dH3"/>
                             <constraint firstAttribute="trailing" secondItem="LJd-mk-1Cm" secondAttribute="trailing" id="uBA-oM-9nS"/>
-                            <constraint firstItem="X6j-Bb-3Cd" firstAttribute="leading" secondItem="6PX-HN-euF" secondAttribute="leading" constant="20" id="wda-jV-3Ab"/>
+                            <constraint firstItem="X6j-Bb-3Cd" firstAttribute="leading" secondItem="6PX-HN-euF" secondAttribute="leading" constant="25" id="wda-jV-3Ab"/>
                         </constraints>
                     </view>
                     <connections>
@@ -283,25 +283,25 @@
         </scene>
     </scenes>
     <resources>
-        <image name="0" width="111" height="114"/>
-        <image name="1" width="111" height="114"/>
-        <image name="2" width="111" height="114"/>
-        <image name="3" width="111" height="114"/>
-        <image name="4" width="111" height="114"/>
-        <image name="5" width="111" height="114"/>
-        <image name="6" width="111" height="114"/>
-        <image name="7" width="111" height="114"/>
-        <image name="8" width="111" height="114"/>
-        <image name="9" width="111" height="114"/>
-        <image name="add" width="111" height="114"/>
+        <image name="0" width="110" height="114"/>
+        <image name="1" width="110" height="114"/>
+        <image name="2" width="110" height="114"/>
+        <image name="3" width="110" height="114"/>
+        <image name="4" width="110" height="114"/>
+        <image name="5" width="110" height="114"/>
+        <image name="6" width="110" height="114"/>
+        <image name="7" width="110" height="114"/>
+        <image name="8" width="110" height="114"/>
+        <image name="9" width="110" height="114"/>
+        <image name="add" width="110" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="bground" width="900" height="1440"/>
         <image name="clear" width="333" height="114"/>
-        <image name="counter" width="516" height="133"/>
-        <image name="divide" width="111" height="114"/>
-        <image name="equal" width="111" height="114"/>
-        <image name="ground" width="888" height="72"/>
-        <image name="multiply" width="111" height="114"/>
-        <image name="space-bg" width="988" height="946"/>
-        <image name="subtract" width="111" height="114"/>
+        <image name="counter" width="620" height="186"/>
+        <image name="divide" width="110" height="114"/>
+        <image name="equal" width="110" height="114"/>
+        <image name="ground" width="900" height="130"/>
+        <image name="multiply" width="110" height="114"/>
+        <image name="subtract" width="110" height="114"/>
     </resources>
 </document>

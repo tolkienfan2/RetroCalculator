@@ -81,7 +81,6 @@ class ViewController: UIViewController {
 		leftValStr = ""
 		rightValStr = ""
 		currentOperation = Operation.Empty
-		//result = ""
 		outputLabel.text = runningNumber
 	}
 	

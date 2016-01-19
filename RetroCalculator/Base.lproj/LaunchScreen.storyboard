@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="jabjai.ttf">
+            <string>JabjaiHeavy</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -18,39 +23,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-c4-vSu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bground" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-c4-vSu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O5G-Ap-fCm">
-                                <rect key="frame" x="20" y="25" width="560" height="575"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="O5G-Ap-fCm">
+                                <rect key="frame" x="20" y="50" width="560" height="550"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="iQd-GA-OO3">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="86"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M0s-wg-GTR">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="450"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmartBoy" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-Wn-cAb">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="450"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CleverGirl" translatesAutoresizingMaskIntoConstraints="NO" id="own-pv-dl3">
+                                                <rect key="frame" x="280" y="0.0" width="280" height="450"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kids Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="aQF-Jy-vcA">
+                                        <rect key="frame" x="0.0" y="450" width="560" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="86" id="cBv-n1-Fkm"/>
+                                            <constraint firstAttribute="height" constant="100" id="v5A-Jd-y7w"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="own-pv-dl3">
-                                        <rect key="frame" x="155" y="86" width="250" height="389"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="9U4-2K-Qms"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchground" translatesAutoresizingMaskIntoConstraints="NO" id="59o-7J-j5A">
-                                        <rect key="frame" x="0.0" y="475" width="560" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="eZl-dI-YmL"/>
-                                        </constraints>
-                                    </imageView>
+                                        <fontDescription key="fontDescription" name="JabjaiHeavy" family="jabjai" pointSize="60"/>
+                                        <color key="textColor" red="0.43379103535353547" green="0.0" blue="0.43365824159621369" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="O5G-Ap-fCm" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="5" id="2dB-K0-3wZ"/>
                             <constraint firstItem="xd8-c4-vSu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="6Nt-u3-z3b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="O5G-Ap-fCm" secondAttribute="trailing" id="FAz-2t-Z3Y"/>
                             <constraint firstItem="xd8-c4-vSu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="I08-Qk-A5N"/>
+                            <constraint firstItem="O5G-Ap-fCm" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="30" id="b24-Cy-aW3"/>
                             <constraint firstAttribute="trailing" secondItem="xd8-c4-vSu" secondAttribute="trailing" id="d9j-lq-6lq"/>
                             <constraint firstItem="O5G-Ap-fCm" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="dEv-x8-JEr"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="xd8-c4-vSu" secondAttribute="bottom" id="eLU-jT-G5W"/>
@@ -64,9 +71,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Retro-Calc" width="755" height="111"/>
-        <image name="launchbg" width="1433" height="957"/>
-        <image name="launchground" width="999" height="225"/>
-        <image name="robot" width="786" height="402"/>
+        <image name="CleverGirl" width="687" height="1306"/>
+        <image name="SmartBoy" width="418" height="1056"/>
+        <image name="bground" width="900" height="1440"/>
     </resources>
 </document>
